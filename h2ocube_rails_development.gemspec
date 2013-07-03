@@ -17,5 +17,5 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  %w(thin pry-rails pry-remote better_errors binding_of_caller meta_request powder).each{ |gem| spec.add_dependency gem }
+  %w(thin pry-rails pry-remote better_errors binding_of_caller meta_request powder capistrano rvm-capistrano capistrano-rainbows).each{ |gem| spec.add_dependency gem }
 end

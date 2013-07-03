@@ -1,5 +1,7 @@
 # H2ocubeRailsDevelopment
 
+[![Gem Version](https://badge.fury.io/rb/h2ocube_rails_development.png)](http://badge.fury.io/rb/h2ocube_rails_development)
+
 Just a collection for development gems
 
 ## Installation
@@ -29,6 +31,9 @@ see include gems below :p
 * binding_of_caller https://github.com/banister/binding_of_caller
 * meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
 * powder https://github.com/Rodreegez/powder
+* capistrano https://github.com/capistrano/capistrano
+* rvm-capistrano https://github.com/wayneeseguin/rvm-capistrano
+* capistrano-rainbows https://github.com/h2ocube/capistrano-rainbows
 
 ## Contributing
 

@@ -1,4 +1,4 @@
-Copyright (c) 2013 Ben
+Copyright (c) 2013 H2ocube.com
 
 MIT License
 

@@ -34,6 +34,7 @@ see include gems below :p
 * capistrano https://github.com/capistrano/capistrano
 * rvm-capistrano https://github.com/wayneeseguin/rvm-capistrano
 * capistrano-rainbows https://github.com/h2ocube/capistrano-rainbows
+* vendorer https://github.com/grosser/vendorer
 
 ## Contributing
 

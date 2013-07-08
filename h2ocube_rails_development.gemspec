@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.0.2'
+  spec.version       = '0.0.3'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = %q{Just a collection for development gems}
@@ -17,5 +17,5 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  %w(thin pry-rails pry-remote better_errors binding_of_caller meta_request powder capistrano rvm-capistrano capistrano-rainbows).each{ |gem| spec.add_dependency gem }
+  %w(thin pry-rails pry-remote better_errors binding_of_caller meta_request powder capistrano rvm-capistrano capistrano-rainbows vendorer).each{ |gem| spec.add_dependency gem }
 end

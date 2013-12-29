@@ -32,8 +32,9 @@ see include gems below :p
 * meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
 * powder https://github.com/Rodreegez/powder
 * capistrano https://github.com/capistrano/capistrano
-* rvm-capistrano https://github.com/wayneeseguin/rvm-capistrano
-* capistrano-rainbows https://github.com/h2ocube/capistrano-rainbows
+* capistrano-rbenv https://github.com/capistrano/rbenv
+* capistrano-bundler https://github.com/capistrano/bundler
+* capistrano-rails https://github.com/capistrano/rails
 * vendorer https://github.com/grosser/vendorer
 
 ## Contributing

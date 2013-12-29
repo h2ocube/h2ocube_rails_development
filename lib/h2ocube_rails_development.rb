@@ -1,4 +1,4 @@
-%w(thin pry-rails pry-remote better_errors binding_of_caller meta_request).each{ |gem| require gem }
+%w(pry-rails pry-remote better_errors binding_of_caller meta_request).each{ |gem| require gem }
 
 
 module H2ocubeRailsDevelopment

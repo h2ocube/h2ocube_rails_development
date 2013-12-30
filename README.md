@@ -24,7 +24,6 @@ see include gems below :p
 
 ## Include
 
-* thin http://code.macournoyer.com/thin/
 * pry-rails https://github.com/rweng/pry-rails
 * pry-remote https://github.com/Mon-Ouie/pry-remote
 * better_errors https://github.com/charliesome/better_errors

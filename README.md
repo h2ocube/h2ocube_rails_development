@@ -35,6 +35,7 @@ see include gems below :p
 * capistrano-bundler https://github.com/capistrano/bundler
 * capistrano-rails https://github.com/capistrano/rails
 * vendorer https://github.com/grosser/vendorer
+* spring https://github.com/rails/spring
 
 ## Contributing
 

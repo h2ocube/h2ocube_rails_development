@@ -20,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-see include gems below :p
+    $ rake annotate         # => annotate all your models, tests, fixtures, factories and routes
+    $ rake annotate:remove  # => remove all annotated comments
+
+more details see below
 
 ## Include
 
@@ -36,6 +39,7 @@ see include gems below :p
 * capistrano-rails https://github.com/capistrano/rails
 * vendorer https://github.com/grosser/vendorer
 * spring https://github.com/rails/spring
+* annotate https://github.com/ctran/annotate_models
 
 ## Contributing
 

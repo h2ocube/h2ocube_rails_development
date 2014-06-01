@@ -8,7 +8,7 @@ Just a collection for development gems
 
 Add this line to your application's Gemfile:
 
-    gem 'h2ocube_rails_development', group: :development
+    gem 'h2ocube_rails_development'
 
 And then execute:
 
@@ -22,24 +22,45 @@ Or install it yourself as:
 
     $ rake annotate         # => annotate all your models, tests, fixtures, factories and routes
     $ rake annotate:remove  # => remove all annotated comments
+    $ rake spec             # => just default rspec task
+    $ rake rubocop          # => rubocop -R
+    $ rake test             # => run spec and rubocop
+    $ rake sort             # => Sort config/locales/*.yml by key
 
 more details see below
 
 ## Include
 
-* pry-rails https://github.com/rweng/pry-rails
-* pry-remote https://github.com/Mon-Ouie/pry-remote
+For development & test
+
+* factory_girl_rails https://github.com/thoughtbot/factory_girl_rails
+* rspec-rails https://github.com/rspec/rspec-rails
+
+For development only
+
+* annotate https://github.com/ctran/annotate_models
 * better_errors https://github.com/charliesome/better_errors
 * binding_of_caller https://github.com/banister/binding_of_caller
 * meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
-* powder https://github.com/Rodreegez/powder
+* pry-rails https://github.com/rweng/pry-rails
+* pry-remote https://github.com/Mon-Ouie/pry-remote
+
+For test only
+
+* capybara http://jnicklas.github.io/capybara
+* database_cleaner https://github.com/bmabey/database_cleaner
+* timecop https://github.com/travisjeffery/timecop
+
+Just installed but not required
+
 * capistrano https://github.com/capistrano/capistrano
-* capistrano-rbenv https://github.com/capistrano/rbenv
 * capistrano-bundler https://github.com/capistrano/bundler
 * capistrano-rails https://github.com/capistrano/rails
-* vendorer https://github.com/grosser/vendorer
+* capistrano-rbenv https://github.com/capistrano/rbenv
+* powder https://github.com/Rodreegez/powder
+* rubocop https://github.com/bbatsov/rubocop
 * spring https://github.com/rails/spring
-* annotate https://github.com/ctran/annotate_models
+* vendorer https://github.com/grosser/vendorer
 
 ## Contributing
 

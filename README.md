@@ -34,6 +34,7 @@ more details see below
 For development & test
 
 * factory_girl_rails https://github.com/thoughtbot/factory_girl_rails
+* pry-rails https://github.com/rweng/pry-rails
 * rspec-rails https://github.com/rspec/rspec-rails
 
 For development only
@@ -42,7 +43,6 @@ For development only
 * better_errors https://github.com/charliesome/better_errors
 * binding_of_caller https://github.com/banister/binding_of_caller
 * meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
-* pry-rails https://github.com/rweng/pry-rails
 * pry-remote https://github.com/Mon-Ouie/pry-remote
 
 For test only

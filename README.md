@@ -59,7 +59,6 @@ Just installed but not required
 * capistrano-rbenv https://github.com/capistrano/rbenv
 * powder https://github.com/Rodreegez/powder
 * rubocop https://github.com/bbatsov/rubocop
-* spring https://github.com/rails/spring
 * vendorer https://github.com/grosser/vendorer
 
 ## Contributing

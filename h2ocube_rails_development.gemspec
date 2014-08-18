@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.1.4'
+  spec.version       = '0.1.5'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = %q{Just a collection for development gems}
@@ -42,6 +42,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'capistrano-rbenv', '~> 2.0'
   spec.add_dependency 'powder'
   spec.add_dependency 'rubocop'
-  spec.add_dependency 'spring'
   spec.add_dependency 'vendorer'
 end

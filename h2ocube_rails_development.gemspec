@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.1.5'
+  spec.version       = '0.1.6'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = %q{Just a collection for development gems}
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # for development & test
+
   spec.add_dependency 'factory_girl_rails'
   spec.add_dependency 'pry-rails'
   spec.add_dependency 'rspec-rails'
@@ -29,6 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'binding_of_caller'
   spec.add_dependency 'meta_request'
   spec.add_dependency 'pry-remote'
+  spec.add_dependency 'rails_stats'
 
   # for test only
   spec.add_dependency 'capybara'

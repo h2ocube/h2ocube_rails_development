@@ -12,7 +12,7 @@ module H2ocubeRailsDevelopment
     rake_tasks do
       desc 'annotate all your models, tests, fixtures, factories and routes'
       task :annotate do
-        system 'bundle exec annotate -i;bundle exec annotate -r'
+        system 'bundle exec annotate -i'
       end
 
       desc 'remove all annotated comments'

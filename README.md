@@ -20,12 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-    $ rake annotate         # => annotate all your models, tests, fixtures, factories and routes
-    $ rake annotate:remove  # => remove all annotated comments
-    $ rake spec             # => just default rspec task
+    $ rake annotate         # => Annotate all your models and factories
+    $ rake annotate:remove  # => Remove all annotated comments
+    $ rake spec             # => Just default rspec task
     $ rake rubocop          # => rubocop -R
-    $ rake test             # => run spec and rubocop
+    $ rake test             # => Run spec and rubocop
     $ rake sort             # => Sort config/locales/*.yml by key
+    $ rake stats            # => Show more details than default
 
 more details see below
 
@@ -44,6 +45,7 @@ For development only
 * binding_of_caller https://github.com/banister/binding_of_caller
 * meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
 * pry-remote https://github.com/Mon-Ouie/pry-remote
+* rails_stats https://github.com/bleonard/rails_stats/
 
 For test only
 

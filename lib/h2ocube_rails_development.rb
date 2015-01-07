@@ -1,6 +1,6 @@
 %w(factory_girl_rails rspec-rails pry-rails).each{ |gem| require gem } if Rails.env.development? || Rails.env.test?
 
-%w(annotate better_errors binding_of_caller meta_request pry-remote rails_stats).each{ |gem| require gem } if Rails.env.development?
+%w(annotate better_errors binding_of_caller meta_request pry-remote).each{ |gem| require gem } if Rails.env.development?
 
 %w(capybara database_cleaner timecop).each{ |gem| require gem } if Rails.env.test?
 
@@ -10,6 +10,7 @@ module H2ocubeRailsDevelopment
     railtie_name :h2ocube_rails_development
 
     rake_tasks do
+      require 'rails_stats'
       desc 'annotate all your models, tests, fixtures, factories and routes'
       task :annotate do
         system 'bundle exec annotate -i'

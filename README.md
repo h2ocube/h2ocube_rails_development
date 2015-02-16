@@ -20,13 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-    $ rake annotate         # => Annotate all your models and factories
-    $ rake annotate:remove  # => Remove all annotated comments
-    $ rake spec             # => Just default rspec task
-    $ rake rubocop          # => rubocop -R
-    $ rake test             # => Run spec and rubocop
-    $ rake sort             # => Sort config/locales/*.yml by key
-    $ rake stats            # => Show more details than default
+    $ bin/rake annotate         # => Annotate all your models and factories
+    $ bin/rake annotate:remove  # => Remove all annotated comments
+    $ bin/rake spec             # => Just default rspec task
+    $ bin/rake rubocop          # => rubocop -R
+    $ bin/rake test             # => Run spec and rubocop
+    $ bin/rake sort             # => Sort config/locales/*.yml by key
+    $ bin/rake stats            # => Show more details than default
 
 more details see below
 
@@ -46,6 +46,8 @@ For development only
 * meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
 * pry-remote https://github.com/Mon-Ouie/pry-remote
 * rails_stats https://github.com/bleonard/rails_stats/
+* spring https://github.com/rails/spring
+* spring-commands-rspec https://github.com/jonleighton/spring-commands-rspec
 
 For test only
 

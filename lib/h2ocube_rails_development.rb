@@ -1,6 +1,6 @@
 %w(factory_girl_rails rspec-rails pry-rails).each{ |gem| require gem } if Rails.env.development? || Rails.env.test?
 
-%w(annotate better_errors binding_of_caller meta_request pry-remote).each{ |gem| require gem } if Rails.env.development?
+%w(annotate better_errors binding_of_caller meta_request pry-remote spring spring-commands-rspec).each{ |gem| require gem } if Rails.env.development?
 
 %w(capybara database_cleaner timecop).each{ |gem| require gem } if Rails.env.test?
 

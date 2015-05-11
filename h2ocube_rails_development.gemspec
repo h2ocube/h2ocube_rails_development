@@ -3,19 +3,23 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.1.10'
+  spec.version       = '0.1.11'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
-  spec.description   = %q{Just a collection for development gems}
-  spec.summary       = %q{Just a collection for development gems}
+  spec.description   = 'Just a collection for development gems'
+  spec.summary       = 'Just a collection for development gems'
   spec.homepage      = 'https://github.com/h2ocube/h2ocube_rails_development'
   spec.license       = 'MIT'
-  spec.required_ruby_version = '~> 2.0'
+  spec.required_ruby_version = '~> 2.2'
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = `git ls-files`.split($RS)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
+
+  # for all
+  spec.add_dependency 'exception_notification'
+  spec.add_dependency 'h2ocube_rails_cache'
 
   # for development & test
 
@@ -24,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rspec-rails'
 
   # for development only
-  
+
   spec.add_dependency 'annotate'
   spec.add_dependency 'better_errors'
   spec.add_dependency 'binding_of_caller'
@@ -40,11 +44,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'timecop'
 
   # install but don't require
-  spec.add_dependency 'capistrano', '~> 3.0'
+  spec.add_dependency 'capistrano', '~> 3.1'
   spec.add_dependency 'capistrano-bundler'
   spec.add_dependency 'capistrano-rails'
   spec.add_dependency 'capistrano-rbenv', '~> 2.0'
   spec.add_dependency 'powder'
   spec.add_dependency 'rubocop'
   spec.add_dependency 'vendorer'
+  spec.add_dependency 'whenever'
 end

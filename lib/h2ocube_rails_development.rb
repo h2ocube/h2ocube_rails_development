@@ -1,9 +1,10 @@
-%w(factory_girl_rails rspec-rails pry-rails).each{ |gem| require gem } if Rails.env.development? || Rails.env.test?
+%w(exception_notification h2ocube_rails_cache).each { |gem| require gem }
 
-%w(annotate better_errors binding_of_caller meta_request pry-remote).each{ |gem| require gem } if Rails.env.development?
+%w(factory_girl_rails rspec-rails pry-rails).each { |gem| require gem } if Rails.env.development? || Rails.env.test?
 
-%w(capybara database_cleaner timecop).each{ |gem| require gem } if Rails.env.test?
+%w(annotate better_errors binding_of_caller meta_request pry-remote).each { |gem| require gem } if Rails.env.development?
 
+%w(capybara database_cleaner timecop).each { |gem| require gem } if Rails.env.test?
 
 module H2ocubeRailsDevelopment
   class Railtie < Rails::Railtie
@@ -40,14 +41,12 @@ module H2ocubeRailsDevelopment
         end
 
         Dir[Rails.root.join('config/locales/*.yml')].each do |f|
-          STDOUT.print (f)
+          STDOUT.print(f)
           hash = deeply_sort_hash(YAML.load(File.read(f)))
-          File.open(f, 'w') { |file|
-            file.write hash.to_yaml
-          }
-          STDOUT.print ("...done!\n")
+          File.open(f, 'w') { |file| file.write hash.to_yaml }
+          STDOUT.print("...done!\n")
         end
       end
     end
   end
-end if Rails.env.development?
+end if Rails.env.development? || Rails.env.test?

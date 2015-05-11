@@ -32,6 +32,11 @@ more details see below
 
 ## Include
 
+For all
+
+* exception_notification http://smartinez87.github.io/exception_notification
+* h2ocube_rails_cache https://github.com/h2ocube/h2ocube_rails_cache
+
 For development & test
 
 * factory_girl_rails https://github.com/thoughtbot/factory_girl_rails
@@ -64,6 +69,7 @@ Just installed but not required
 * powder https://github.com/Rodreegez/powder
 * rubocop https://github.com/bbatsov/rubocop
 * vendorer https://github.com/grosser/vendorer
+* whenever https://github.com/javan/whenever
 
 ## Contributing
 

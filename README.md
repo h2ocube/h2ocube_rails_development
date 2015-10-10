@@ -18,6 +18,11 @@ Or install it yourself as:
 
     $ gem install h2ocube_rails_development
 
+If using rspec and capybara, you should add below code to spec_helper.rb
+
+    require 'rack_session_access/capybara'
+    require 'webmock/rspec'
+
 ## Usage
 
     $ bin/rake annotate         # => Annotate all your models and factories
@@ -58,7 +63,9 @@ For test only
 
 * capybara http://jnicklas.github.io/capybara
 * database_cleaner https://github.com/bmabey/database_cleaner
+* rack_session_access https://github.com/railsware/rack_session_access
 * timecop https://github.com/travisjeffery/timecop
+* webmock https://github.com/bblimke/webmock
 
 Just installed but not required
 

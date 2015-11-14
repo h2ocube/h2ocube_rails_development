@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.2.0'
+  spec.version       = '0.3.0'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = 'Just a collection for development gems'
@@ -18,8 +18,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # for all
-  spec.add_dependency 'exception_notification'
+  spec.add_dependency 'h2ocube_rails_assets'
   spec.add_dependency 'h2ocube_rails_cache'
+  spec.add_dependency 'h2ocube_rails_puma'
 
   # for development & test
 
@@ -46,7 +47,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'webmock'
 
   # install but don't require
-  spec.add_dependency 'capistrano', '~> 3.1'
+  spec.add_dependency 'capistrano', '~> 3.4'
   spec.add_dependency 'capistrano-bundler'
   spec.add_dependency 'capistrano-rails'
   spec.add_dependency 'capistrano-rbenv', '~> 2.0'

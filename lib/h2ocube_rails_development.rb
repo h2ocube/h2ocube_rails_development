@@ -1,4 +1,4 @@
-%w(exception_notification h2ocube_rails_cache).each { |gem| require gem }
+%w(h2ocube_rails_assets h2ocube_rails_cache h2ocube_rails_puma).each { |gem| require gem }
 
 %w(factory_girl_rails rspec-rails pry-rails).each { |gem| require gem } if Rails.env.development? || Rails.env.test?
 
@@ -41,7 +41,7 @@ module H2ocubeRailsDevelopment
       task :sort do
         def deeply_sort_hash(object)
           return object unless object.is_a?(Hash)
-          hash = Hash.new
+          hash = {}
           object.each { |k, v| hash[k] = deeply_sort_hash(v) }
           sorted = hash.sort { |a, b| a[0].to_s <=> b[0].to_s }
           hash.class[sorted]

@@ -39,8 +39,9 @@ more details see below
 
 For all
 
-* exception_notification http://smartinez87.github.io/exception_notification
+* h2ocube_rails_assets https://github.com/h2ocube/h2ocube_rails_assets
 * h2ocube_rails_cache https://github.com/h2ocube/h2ocube_rails_cache
+* h2ocube_rails_puma https://github.com/h2ocube/h2ocube_rails_puma
 
 For development & test
 
@@ -55,7 +56,7 @@ For development only
 * binding_of_caller https://github.com/banister/binding_of_caller
 * meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
 * pry-remote https://github.com/Mon-Ouie/pry-remote
-* rails_stats https://github.com/bleonard/rails_stats/
+* rails_stats https://github.com/bleonard/rails_stats
 * spring https://github.com/rails/spring
 * spring-commands-rspec https://github.com/jonleighton/spring-commands-rspec
 

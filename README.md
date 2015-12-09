@@ -63,8 +63,8 @@ For development only
 For test only
 
 * capybara http://jnicklas.github.io/capybara
-* database_cleaner https://github.com/bmabey/database_cleaner
-* rack_session_access https://github.com/railsware/rack_session_access
+* poltergeist https://github.com/teampoltergeist/poltergeist
+* rspec_junit_formatter https://github.com/sj26/rspec_junit_formatter
 * timecop https://github.com/travisjeffery/timecop
 * webmock https://github.com/bblimke/webmock
 

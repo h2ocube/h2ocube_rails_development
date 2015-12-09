@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.4.0'
+  spec.version       = '0.4.1'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = 'Just a collection for development gems'
@@ -42,7 +42,6 @@ Gem::Specification.new do |spec|
   # for test only
   spec.add_dependency 'capybara'
   spec.add_dependency 'poltergeist'
-  spec.add_dependency 'rack_session_access'
   spec.add_dependency 'rspec_junit_formatter'
   spec.add_dependency 'timecop'
   spec.add_dependency 'webmock'

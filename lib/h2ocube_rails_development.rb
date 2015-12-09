@@ -1,20 +1,18 @@
 %w(h2ocube_rails_assets h2ocube_rails_cache h2ocube_rails_puma).each { |gem| require gem }
 
-%w(factory_girl_rails rspec-rails pry-rails).each { |gem| require gem } if Rails.env.development? || Rails.env.test?
+%w(pry-rails).each { |gem| require gem } if Rails.env.development? || Rails.env.test?
 
 if Rails.env.development?
   %w(annotate better_errors binding_of_caller meta_request pry-remote).each { |gem| require gem }
   BetterErrors::Middleware.allow_ip! '0.0.0.0'
 end
 
-%w(capybara database_cleaner rack_session_access timecop webmock).each { |gem| require gem } if Rails.env.test?
-
 module H2ocubeRailsDevelopment
   class Railtie < Rails::Railtie
     railtie_name :h2ocube_rails_development
 
     initializer 'h2ocube_rails_development.configure_rails_initialization' do |app|
-      app.middleware.use RackSessionAccess::Middleware if Rails.env.test?
+      app.middleware.use RackSessionAccess::Middleware if Rails.env.test? && defined?(RackSessionAccess)
     end
 
     rake_tasks do

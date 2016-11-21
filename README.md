@@ -52,10 +52,7 @@ For development & test
 For development only
 
 * annotate https://github.com/ctran/annotate_models
-* better_errors https://github.com/charliesome/better_errors
-* binding_of_caller https://github.com/banister/binding_of_caller
 * meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
-* pry-remote https://github.com/Mon-Ouie/pry-remote
 * rails_stats https://github.com/bleonard/rails_stats
 * spring https://github.com/rails/spring
 * spring-commands-rspec https://github.com/jonleighton/spring-commands-rspec
@@ -76,7 +73,6 @@ Just installed but not required
 * capistrano-rbenv https://github.com/capistrano/rbenv
 * powder https://github.com/Rodreegez/powder
 * rubocop https://github.com/bbatsov/rubocop
-* vendorer https://github.com/grosser/vendorer
 * whenever https://github.com/javan/whenever
 
 ## Contributing

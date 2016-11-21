@@ -3,14 +3,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.4.1'
+  spec.version       = '0.5.0'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = 'Just a collection for development gems'
   spec.summary       = 'Just a collection for development gems'
   spec.homepage      = 'https://github.com/h2ocube/h2ocube_rails_development'
   spec.license       = 'MIT'
-  spec.required_ruby_version = '~> 2.2'
+  spec.required_ruby_version = '~> 2.3'
 
   spec.files         = `git ls-files`.split($RS)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -31,10 +31,7 @@ Gem::Specification.new do |spec|
   # for development only
 
   spec.add_dependency 'annotate'
-  spec.add_dependency 'better_errors'
-  spec.add_dependency 'binding_of_caller'
   spec.add_dependency 'meta_request'
-  spec.add_dependency 'pry-remote'
   spec.add_dependency 'rails_stats'
   spec.add_dependency 'spring'
   spec.add_dependency 'spring-commands-rspec'
@@ -47,12 +44,11 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'webmock'
 
   # install but don't require
-  spec.add_dependency 'capistrano', '~> 3.4'
+  spec.add_dependency 'capistrano'
   spec.add_dependency 'capistrano-bundler'
   spec.add_dependency 'capistrano-rails'
-  spec.add_dependency 'capistrano-rbenv', '~> 2.0'
+  spec.add_dependency 'capistrano-rbenv'
   spec.add_dependency 'powder'
   spec.add_dependency 'rubocop'
-  spec.add_dependency 'vendorer'
   spec.add_dependency 'whenever'
 end

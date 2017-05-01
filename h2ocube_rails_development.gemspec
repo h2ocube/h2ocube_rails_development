@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.6.0'
+  spec.version       = '0.6.1'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = 'Just a collection for development gems'
@@ -46,7 +46,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'capistrano-bundler'
   spec.add_dependency 'capistrano-rails'
   spec.add_dependency 'capistrano-rbenv'
-  spec.add_dependency 'capistrano-puma'
+  spec.add_dependency 'capistrano3-puma'
   spec.add_dependency 'rubocop'
   spec.add_dependency 'whenever'
 end

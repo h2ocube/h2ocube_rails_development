@@ -1,8 +1,8 @@
-%w[h2ocube_rails_assets h2ocube_rails_cache h2ocube_rails_helper].each { |gem| require gem }
+%w[puma h2ocube_rails_assets h2ocube_rails_cache h2ocube_rails_helper].each { |gem| require gem }
 
-%w[].each { |gem| require gem } if Rails.env.development? || Rails.env.test?
+%w[byebug].each { |gem| require gem } if Rails.env.development? || Rails.env.test?
 
-%w(annotate).each { |gem| require gem } if Rails.env.development?
+%w[listen rails_stats spring spring-commands-rspec spring-watcher-listen web-console].each { |gem| require gem } if Rails.env.development?
 
 module H2ocubeRailsDevelopment
   class Railtie < Rails::Railtie

@@ -2,7 +2,7 @@
 
 %w[byebug].each { |gem| require gem } if Rails.env.development? || Rails.env.test?
 
-%w[listen rails_stats spring spring-commands-rspec spring-watcher-listen web-console].each { |gem| require gem } if Rails.env.development?
+%w[listen rails_stats web-console].each { |gem| require gem } if Rails.env.development?
 
 module H2ocubeRailsDevelopment
   class Railtie < Rails::Railtie

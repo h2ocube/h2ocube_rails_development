@@ -18,18 +18,8 @@ Or install it yourself as:
 
     $ gem install h2ocube_rails_development
 
-If using rspec and capybara, you should add below code to spec_helper.rb
-
-    require 'rack_session_access/capybara'
-    require 'webmock/rspec'
-
 ## Usage
 
-    $ bin/rake annotate         # => Annotate all your models and factories
-    $ bin/rake annotate:remove  # => Remove all annotated comments
-    $ bin/rake spec             # => Just default rspec task
-    $ bin/rake rubocop          # => rubocop -R
-    $ bin/rake test             # => Run spec and rubocop
     $ bin/rake sort             # => Sort config/locales/*.yml by key
     $ bin/rake stats            # => Show more details than default
 
@@ -41,37 +31,34 @@ For all
 
 * h2ocube_rails_assets https://github.com/h2ocube/h2ocube_rails_assets
 * h2ocube_rails_cache https://github.com/h2ocube/h2ocube_rails_cache
-* h2ocube_rails_puma https://github.com/h2ocube/h2ocube_rails_puma
+* h2ocube_rails_helper https://github.com/h2ocube/h2ocube_rails_helper
+* puma https://github.com/puma/puma
 
 For development & test
 
+* byebug https://github.com/deivid-rodriguez/byebug
 * factory_girl_rails https://github.com/thoughtbot/factory_girl_rails
-* pry-rails https://github.com/rweng/pry-rails
 * rspec-rails https://github.com/rspec/rspec-rails
 
 For development only
 
-* annotate https://github.com/ctran/annotate_models
-* meta_request https://github.com/dejan/rails_panel/tree/master/meta_request
+* listen https://github.com/guard/listen
 * rails_stats https://github.com/bleonard/rails_stats
 * spring https://github.com/rails/spring
 * spring-commands-rspec https://github.com/jonleighton/spring-commands-rspec
-
-For test only
-
-* capybara http://jnicklas.github.io/capybara
-* poltergeist https://github.com/teampoltergeist/poltergeist
-* rspec_junit_formatter https://github.com/sj26/rspec_junit_formatter
-* timecop https://github.com/travisjeffery/timecop
-* webmock https://github.com/bblimke/webmock
+* spring-watcher-listen https://github.com/jonleighton/spring-watcher-listen
+* web-console https://github.com/rails/web-console
 
 Just installed but not required
 
+* capybara http://jnicklas.github.io/capybara
+* timecop https://github.com/travisjeffery/timecop
+* webmock https://github.com/bblimke/webmock
 * capistrano https://github.com/capistrano/capistrano
 * capistrano-bundler https://github.com/capistrano/bundler
 * capistrano-rails https://github.com/capistrano/rails
 * capistrano-rbenv https://github.com/capistrano/rbenv
-* powder https://github.com/Rodreegez/powder
+* capistrano3-puma https://github.com/seuros/capistrano-puma
 * rubocop https://github.com/bbatsov/rubocop
 * whenever https://github.com/javan/whenever
 

@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.6.4'
+  spec.version       = '0.7.0'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = 'Just a collection for development gems'
@@ -26,8 +26,6 @@ Gem::Specification.new do |spec|
   # for development & test
 
   spec.add_dependency 'byebug'
-  spec.add_dependency 'factory_girl_rails'
-  spec.add_dependency 'rspec-rails'
 
   # for development only
 
@@ -40,6 +38,8 @@ Gem::Specification.new do |spec|
 
   # install but don't require
   spec.add_dependency 'capybara'
+  spec.add_dependency 'database_cleaner'
+  spec.add_dependency 'factory_bot_rails'
   spec.add_dependency 'timecop'
   spec.add_dependency 'webmock'
   spec.add_dependency 'capistrano'
@@ -47,6 +47,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'capistrano-rails'
   spec.add_dependency 'capistrano-rbenv'
   spec.add_dependency 'capistrano3-puma'
+  spec.add_dependency 'rspec-rails'
+  spec.add_dependency 'rspec-retry'
   spec.add_dependency 'rubocop'
   spec.add_dependency 'whenever'
 end

@@ -37,8 +37,6 @@ For all
 For development & test
 
 * byebug https://github.com/deivid-rodriguez/byebug
-* factory_girl_rails https://github.com/thoughtbot/factory_girl_rails
-* rspec-rails https://github.com/rspec/rspec-rails
 
 For development only
 
@@ -61,6 +59,10 @@ Just installed but not required
 * capistrano3-puma https://github.com/seuros/capistrano-puma
 * rubocop https://github.com/bbatsov/rubocop
 * whenever https://github.com/javan/whenever
+* factory_bot_rails https://github.com/thoughtbot/factory_bot_rails
+* rspec-rails https://github.com/rspec/rspec-rails
+* rspec-retry https://github.com/NoRedInk/rspec-retry
+* database_cleaner https://github.com/DatabaseCleaner/database_cleaner
 
 ## Contributing
 

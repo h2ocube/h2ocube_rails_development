@@ -3,14 +3,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'h2ocube_rails_development'
-  spec.version       = '0.7.0'
+  spec.version       = '0.7.1'
   spec.authors       = ['Ben']
   spec.email         = ['ben@zfben.com']
   spec.description   = 'Just a collection for development gems'
   spec.summary       = 'Just a collection for development gems'
   spec.homepage      = 'https://github.com/h2ocube/h2ocube_rails_development'
   spec.license       = 'MIT'
-  spec.required_ruby_version = '~> 2.4'
 
   spec.files         = `git ls-files`.split($RS)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
